@@ -1,0 +1,68 @@
+:host{
+  header{
+    padding: 10px;
+    background: green;
+    position: relative;
+    z-index: 3;
+  }
+  .logo{
+    width: 100px;
+  }
+  .logo:hover{
+    cursor: pointer;
+  }
+  .top_menu{
+    margin-top: 18px;
+    z-index: 2;
+  }
+  .top_menu ul{
+    padding: 0;
+    margin: 0;
+  }
+  .top_menu ul li{
+    list-style-type: none;
+    display: inline-block;
+  }
+  .top_menu ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .top_menu ul li a:hover{
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+  .menu-icon{
+    display: none;
+  }
+  @media screen and (min-width:128px) and (max-width: 900px){
+    .top_menu{
+      position: fixed;
+      transition: 0.5s ease-in-out;
+      right: -280px;
+      top: 64px;
+      background: var(--primary-color);
+      width: 240px;
+      height: 100%;
+    }
+    .top_menu ul li{
+      display: block;
+      text-align: left;
+      margin: 0;
+      padding: 10px 0 10px 26px;
+      border-bottom: 1px solid var(--secondary-color);
+    }
+    .menu-icon{
+      display: block;
+      font-size: 36px;
+      color: var(--text-color);
+    }
+    .mobile_menu{
+      right: 0;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
