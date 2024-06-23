@@ -1,0 +1,34 @@
+#home {
+  background-image: url("/assets/img_home.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+
+  .custom_shadow{
+    background: rgba(32, 32, 32, 0.44);
+  }
+}
+.home_text {
+  h1{
+    color: var(--text-color-2);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20vh;
+  }
+  p{
+    color: var(--text-color-2);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2vh;
+  }
+}
+
+#cards{
+  margin: 120px 0;
+  .card{
+    padding: 6px;
+    height: 350px;
+    width: 250px;
+  }
+}

@@ -1,8 +1,10 @@
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --text-color: #faf7f7;
-  --bg-color: #e3f1ff;
+  --primary-color: #e53935;
+  --secondary-color: #b71c1c;
+  --tertiary-color: #fdc53e;
+  --text-color: #5a5a5a;
+  --text-color-2: #ffffff;
+  --bg-color: #f3f6f6;
 }
 * {
   margin: 0;
@@ -15,4 +17,11 @@ p{
 
 body{
   background-color: var(--bg-color) !important;
+}
+
+.custom_shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.custom_shadow_white {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }

@@ -1,0 +1,18 @@
+footer{
+    background-color: var(--tertiary-color);
+  color: var(--text-color-2);
+    padding: 20px 0;
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e9ecef;
+    a{
+        color: #6c757d;
+        text-decoration: none;
+        &:hover{
+            color: #007bff;
+        }
+    }
+}
