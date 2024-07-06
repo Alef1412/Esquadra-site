@@ -32,6 +32,31 @@
     height: 350px;
     width: 250px;
   }
+  .card_porta{
+    background-image: url("");
+  }
+  .card_janela{
+    background-image: url("");
+  }
+  .card_guarda_corpo{
+    background-image: url("");
+  }
+  .card_fachadas{
+    background-image: url("");
+  }
+  .card_toldos{
+    background-image: url("");
+  }
+  .card_portoes{
+    background-image: url("");
+  }
+  .card_corrimao{
+    background-image: url("");
+  }
+  .card_fachadas{
+    background-image: url("");
+  }
+
 }
 
 #call{
@@ -44,6 +69,6 @@
   margin-bottom: 50px;
 }
 #about{
-  background-color: var(--tertiary-color);
+  background-color: var(--bg-color);
   padding: 40px;
 }
