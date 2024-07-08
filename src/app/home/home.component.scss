@@ -33,30 +33,59 @@
     width: 250px;
   }
   .card_porta{
-    background-image: url("");
+    background-image: url("/assets/porta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .card_janela{
-    background-image: url("");
-  }
-  .card_guarda_corpo{
-    background-image: url("");
-  }
-  .card_fachadas{
-    background-image: url("");
-  }
-  .card_toldos{
-    background-image: url("");
-  }
-  .card_portoes{
-    background-image: url("");
-  }
-  .card_corrimao{
-    background-image: url("");
-  }
-  .card_fachadas{
-    background-image: url("");
+    background-image: url("/assets/janela.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
+  .card_guarda_corpo{
+    background-image: url("/assets/guarda_corpo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card_fachadas{
+    background-image: url("/assets/fachada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card_toldos{
+    background-image: url("/assets/toldos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card_portoes{
+    background-image: url("/assets/portao.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card_corrimao{
+    background-image: url("/assets/corrimao.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card_grades{
+    background-image: url("/assets/grades.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 #call{
