@@ -30,7 +30,6 @@
     margin-bottom: 30px;
     height: 350px;
     width: 250px;
-
     > div{
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 90%);
       color: var(--text-color-2);
@@ -95,12 +94,13 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
 }
 
 #call{
   background-color: var(--tertiary-color);
-  height: 240px;
-  margin-bottom: 70px;
+  padding-block: 50px;
+
 }
 
 #client_opinion{
