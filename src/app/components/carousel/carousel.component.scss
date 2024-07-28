@@ -1,0 +1,14 @@
+:host {
+  #client {
+    padding-block: 50px;
+  }
+  .grid_image_carousel{
+    margin: auto;
+    > img {
+      width: 200px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+}

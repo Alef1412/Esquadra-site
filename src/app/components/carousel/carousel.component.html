@@ -1,0 +1,17 @@
+<section id="client">
+  <div class="container-fluid">
+    <div class="row">
+
+      <owl-carousel-o [options]="customOptions">
+        @for (image of images; track $index ) {
+          <ng-template carouselSlide>
+            <div class="grid_image_carousel">
+              <img class="" [src]="image" alt="">
+            </div>
+          </ng-template>
+        }
+      </owl-carousel-o>
+
+    </div>
+  </div>
+</section>

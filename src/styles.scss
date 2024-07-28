@@ -1,3 +1,6 @@
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 :root {
   --primary-color: #e53935;
   --secondary-color: #b71c1c;
@@ -22,6 +25,7 @@ body{
 .custom_shadow {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
 .custom_shadow_white {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }

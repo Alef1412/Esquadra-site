@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
 import {RouterLink} from "@angular/router";
+import {CarouselComponent} from "../components/carousel/carousel.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    NgOptimizedImage,
-    RouterLink
+    RouterLink,
+    CarouselComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
