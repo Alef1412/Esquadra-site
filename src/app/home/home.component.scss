@@ -13,17 +13,29 @@
     font-family: "Montserrat", sans-serif;
     color: var(--text-color-2);
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   p{
     font-family: "Lato", sans-serif;
     color: var(--text-color-2);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 2vh;
   }
-}
+
+  .home_text {
+    .custom_shadow{
+      width: 28rem;
+      padding-block: 1rem;
+      margin: 40px;
+    }
+    img{
+      padding-bottom: 1.5rem;
+    }
+    }
+  }
+
 
 #cards{
   margin: 120px 0;
