@@ -14,4 +14,5 @@ import {CarouselComponent} from "../components/carousel/carousel.component";
 })
 export class HomeComponent {
 
+
 }
