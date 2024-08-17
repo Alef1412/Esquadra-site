@@ -1,1 +1,25 @@
-<p>products works!</p>
+<section>
+  <!-- Botões de Categoria -->
+  <div class="category-buttons">
+    <button (click)="filterCategory('all')">Todas as Categorias</button>
+    <button (click)="filterCategory('Natureza')">Natureza</button>
+    <button (click)="filterCategory('Cidade')">Cidade</button>
+  </div>
+
+  <!-- Renderizar Galeria de Acordo com a Categoria Selecionada -->
+  <div class="gallery-section" *ngFor="let section of filteredSections; let index = index">
+    <h2>{{ section.title }}</h2>
+    <div class="thumbnail-container">
+      <img *ngFor="let photo of section.photos" [src]="photo.src"
+           [alt]="photo.title" class="thumbnail" (click)="openCarousel(section, index)">
+    </div>
+  </div>
+
+  <!-- Carrossel -->
+  <div *ngIf="isCarouselVisible" class="carousel">
+    <button (click)="closeCarousel()" class="close-btn">X</button>
+    <button (click)="prevPhoto()" class="nav-btn prev-btn">Prev</button>
+    <img [src]="currentPhoto?.src" class="carousel-photo" [alt]="currentPhoto?.title">
+    <button (click)="nextPhoto()" class="nav-btn next-btn">Next</button>
+  </div>
+</section>

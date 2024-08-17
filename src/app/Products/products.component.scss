@@ -1,0 +1,81 @@
+.gallery-section {
+  margin-bottom: 30px;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.carousel-photo {
+  max-width: 90%;
+  max-height: 80%;
+  margin-bottom: 20px;
+}
+
+.nav-btn, .close-btn {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1002;
+}
+
+.prev-btn {
+  position: absolute;
+  left: 20px;
+  z-index: 1001;
+}
+
+.next-btn {
+  position: absolute;
+  right: 20px;
+  z-index: 1001;
+}
+
+.category-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.category-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.category-buttons button:hover {
+  background-color: #0056b3;
+}
