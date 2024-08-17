@@ -10,8 +10,9 @@
   <div class="gallery-section" *ngFor="let section of filteredSections; let index = index">
     <h2>{{ section.title }}</h2>
     <div class="thumbnail-container">
-      <img *ngFor="let photo of section.photos" [src]="photo.src"
-           [alt]="photo.title" class="thumbnail" (click)="openCarousel(section, index)">
+      <img *ngFor="let photo of section.photos; let photoIndex = index" [src]="photo.src"
+           [alt]="photo.title" class="thumbnail"
+           (click)="allPhotosMode ? openAllPhotosCarousel(photoIndex) : openCarousel(section, photoIndex)">
     </div>
   </div>
 
