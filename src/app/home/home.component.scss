@@ -42,7 +42,19 @@
     margin-bottom: 30px;
     height: 350px;
     width: 250px;
+    padding: 8px;
     padding-block: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    &:hover{
+      box-shadow: 0 0 20px rgba(251, 201, 60, 1);
+      transition: 0.4s ease-in-out;
+
+      p,h3{
+        text-shadow: 0 0 20px rgba(251, 201, 60, 1);
+        transition: 0.4s ease-in-out;
+      }
+    }
   }
  h2{
     font-family: "Montserrat", sans-serif;
@@ -51,14 +63,16 @@
     font-size: 2rem;
   }
 
-  p{
+  p {
     font-family: "Lato", sans-serif;
     color: var(--text-color);
     text-align: center;
     font-size: 1.2rem;
     margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
 
- }
+  }
 
  .btn {
    padding-block: 1.5rem;
