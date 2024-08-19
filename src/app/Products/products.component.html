@@ -1,15 +1,20 @@
 <section>
   <!-- Botões de Categoria -->
-  <div class="category-buttons">
+  <div class="category-buttons container d-flex align-items-center justify-content-center">
     <button (click)="filterCategory('all')">Todas as Categorias</button>
-    <button (click)="filterCategory('Natureza')">Natureza</button>
-    <button (click)="filterCategory('Cidade')">Cidade</button>
+    <button (click)="filterCategory('Corrimão')">Corrimão</button>
+    <button (click)="filterCategory('Fachadas')">Fachadas</button>
+    <button (click)="filterCategory('Grades')">Grades</button>
+    <button (click)="filterCategory('Guarda-Corpo')">Guarda-Corpo</button>
+    <button (click)="filterCategory('Janelas')">Janelas</button>
+    <button (click)="filterCategory('Portas')">Portas</button>
+    <button (click)="filterCategory('Portões')">Portões</button>
   </div>
 
   <!-- Renderizar Galeria de Acordo com a Categoria Selecionada -->
-  <div class="gallery-section" *ngFor="let section of filteredSections; let index = index">
+  <div class="gallery-section container" *ngFor="let section of filteredSections; let index = index">
     <h2>{{ section.title }}</h2>
-    <div class="thumbnail-container">
+    <div class="thumbnail-container ">
       <img *ngFor="let photo of section.photos; let photoIndex = index" [src]="photo.src"
            [alt]="photo.title" class="thumbnail"
            (click)="allPhotosMode ? openAllPhotosCarousel(photoIndex) : openCarousel(section, photoIndex)">
@@ -19,8 +24,8 @@
   <!-- Carrossel -->
   <div *ngIf="isCarouselVisible" class="carousel">
     <button (click)="closeCarousel()" class="close-btn">X</button>
-    <button (click)="prevPhoto()" class="nav-btn prev-btn">Prev</button>
+    <button (click)="prevPhoto()" class="nav-btn prev-btn"><</button>
     <img [src]="currentPhoto?.src" class="carousel-photo" [alt]="currentPhoto?.title">
-    <button (click)="nextPhoto()" class="nav-btn next-btn">Next</button>
+    <button (click)="nextPhoto()" class="nav-btn next-btn">></button>
   </div>
 </section>
