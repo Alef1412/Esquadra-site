@@ -1,23 +1,23 @@
 #about{
   padding-block: 5rem;
 
+  h2{
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p{
+    font-family: "Lato", sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 1.1rem;
+  }
 
   .text_about_esquadra{
     padding: 2.5rem;
-    h2{
-      font-family: "Montserrat", sans-serif;
-      color: var(--text-color);
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    p{
-      font-family: "Lato", sans-serif;
-      color: var(--text-color);
-      text-align: justify;
-      font-size: 1.1rem;
-    }
 
   }
 
