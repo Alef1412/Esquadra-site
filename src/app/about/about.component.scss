@@ -21,62 +21,34 @@
 
 }
 
-#alumin_line {
-  margin-bottom: 5rem;
-  .card {
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    background-color: #ffffff;
-    margin-inline: 50px;
+#alumin_line .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
+#alumin_line .card-content {
+  flex-grow: 1; /* Faz com que o conteúdo acima do botão ocupe o espaço necessário */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Garante que o botão fique no final do card */
+  padding: 20px;
+}
 
-    .card-content {
-      padding: 20px;
+#alumin_line .button {
+  background-color: #b00000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  /*margin-top: auto; /* Para garantir que o botão fique fixo na parte inferior */
+}
 
-      .card-title {
-        color: #b00000;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 10px 0;
-      }
-
-      .card-text {
-        font-size: 14px;
-        color: #666666;
-        margin-bottom: 20px;
-      }
-
-      a {
-        text-decoration: none;
-        display: inline-block;
-        margin: 10px 0;
-        color: #b00000;
-        font-weight: bold;
-      }
-
-      .button {
-        background-color: #b00000;
-        color: #ffffff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s;
-
-        &:hover {
-          background-color: #900000;
-        }
-      }
-    }
-  }
+#alumin_line .button:hover {
+  background-color: #900000;
 }
 
 #nova_secao {
