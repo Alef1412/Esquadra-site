@@ -170,35 +170,38 @@
 
 }
 
-#alumin_line .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#alumin_line{
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-content {
+    flex-grow: 1; /* Faz com que o conteúdo acima do botão ocupe o espaço necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Garante que o botão fique no final do card */
+    padding: 20px;
+  }
+
+  .button {
+    background-color: #b00000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    /*margin-top: auto; /* Para garantir que o botão fique fixo na parte inferior */
+
+    &:hover {
+      background-color: #900000;
+    }
+  }
 }
 
-#alumin_line .card-content {
-  flex-grow: 1; /* Faz com que o conteúdo acima do botão ocupe o espaço necessário */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Garante que o botão fique no final do card */
-  padding: 20px;
-}
-
-#alumin_line .button {
-  background-color: #b00000;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-  /*margin-top: auto; /* Para garantir que o botão fique fixo na parte inferior */
-}
-
-#alumin_line .button:hover {
-  background-color: #900000;
-}
 
 
 
