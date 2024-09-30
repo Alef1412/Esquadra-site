@@ -170,45 +170,37 @@
 
 }
 
-#value{
-  .custom-card {
-    width: 20rem;
-    height: 22rem;
-    background-color: #002e61;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-
-    .icon {
-      background-color: white;
-      padding: 15px;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-top: 15px;
-    }
-  }
-
+#alumin_line .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+#alumin_line .card-content {
+  flex-grow: 1; /* Faz com que o conteúdo acima do botão ocupe o espaço necessário */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Garante que o botão fique no final do card */
+  padding: 20px;
+}
+
+#alumin_line .button {
+  background-color: #b00000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  /*margin-top: auto; /* Para garantir que o botão fique fixo na parte inferior */
+}
+
+#alumin_line .button:hover {
+  background-color: #900000;
+}
+
+
 
 
 
