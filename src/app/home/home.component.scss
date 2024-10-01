@@ -36,9 +36,89 @@
     }
   }
 
-#cards{
+#alumin_line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px;
+    width: 250px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 15px;
+    text-align: center;
+
+    &:hover {
+      box-shadow: 0 12px 20px rgba(251, 201, 60, 1.5);
+      transition: 0.4s ease-in-out;
+      transform: scale(1.07);
+
+      p, h3 {
+        text-shadow: 0 12px 20px rgba(251, 201, 60, 1.5);
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+
+  .card img {
+    max-height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .card-title {
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    font-size: 1.2rem;
+    flex-grow: 1;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    background-color: #fbc93c;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+
+    &:hover {
+      background-color: #e0ac00;
+      transition: 0.4s ease-in-out;
+    }
+  }
+}
+
+#cards {
   margin: 30px 0;
-  .card{
+  .card {
     margin-bottom: 30px;
     height: 350px;
     width: 250px;
@@ -47,58 +127,58 @@
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 
-
-
-    &:hover{
+    &:hover {
       box-shadow: 0 12px 20px rgba(251, 201, 60, 1.5);
       transition: 0.4s ease-in-out;
       transform: scale(1.07);
 
-      p,h3{
+      p, h3 {
         text-shadow: 0 12px 20px rgba(251, 201, 60, 1.5);
         transition: 0.4s ease-in-out;
       }
     }
   }
- h2{
+
+  h2 {
     font-family: "Montserrat", sans-serif;
-    color: var(--text-color);
+    color: #000000;
     text-align: center;
     font-size: 2rem;
   }
 
   p {
     font-family: "Lato", sans-serif;
-    color: var(--text-color);
+    color: #000000;
     text-align: center;
     font-size: 1.2rem;
     margin-top: 1rem;
     position: relative;
     overflow: hidden;
-
   }
 
- .btn {
-   padding-block: 1.5rem;
+  .btn {
+    padding-block: 1.5rem;
 
-   button {
-     background-color: var(--tertiary-color);
-     color: var(--text-color);
-     font-family: "Montserrat", sans-serif;
-     font-size: 1rem;
-     padding: 0.8rem 1rem;
-     border: none;
-     border-radius: 8px;
-     cursor: pointer;
-     margin-top: 1rem;
-   }
-   button:hover {
-     color: var(--text-color-2);
-     font-weight: bold;
-     transition: 0.4s ease-in-out;
-   }
- }
+    button {
+      background-color: #fbc93c;
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      color: #000000;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+    }
+  }
 }
+
 
 #call{
   background-color: var(--tertiary-color);
@@ -170,37 +250,7 @@
 
 }
 
-#alumin_line{
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 
-  .card-content {
-    flex-grow: 1; /* Faz com que o conteúdo acima do botão ocupe o espaço necessário */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Garante que o botão fique no final do card */
-    padding: 20px;
-  }
-
-  .button {
-    background-color: #b00000;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    /*margin-top: auto; /* Para garantir que o botão fique fixo na parte inferior */
-
-    &:hover {
-      background-color: #900000;
-    }
-  }
-}
 
 
 
