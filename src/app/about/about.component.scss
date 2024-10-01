@@ -1,39 +1,52 @@
-#about{
+#about {
   padding-top: 3rem;
 
-  h2{
+  h2 {
     font-family: "Montserrat", sans-serif;
     color: var(--text-color);
     text-align: center;
     font-size: 2rem;
   }
 
-  p{
+  p {
     font-family: "Lato", sans-serif;
     color: var(--text-color);
     text-align: justify;
     font-size: 1.1rem;
   }
 
-  .text_about_esquadra{
+  .text_about_esquadra {
     padding: 2.5rem;
   }
-
 }
 
-#value{
+#value {
   .custom-card {
     width: 20rem;
     height: 22rem;
-    background-color: #002e61;
-    color: white;
+    background-color: var(--primary-yellow);
+    color: var(--text-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url('/assets/logos/logomarca.png') no-repeat center center;
+      background-size: cover;
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
 
     .icon {
-      background-color: white;
+      background-color: var(--primary-yellow);
       padding: 15px;
       border-radius: 50%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -42,6 +55,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 1;
 
       img {
         width: 40px;
@@ -49,32 +63,38 @@
       }
     }
 
+    h2, p {
+      z-index: 1;
+    }
+
     h2 {
       font-size: 1.5rem;
+      color: var(--text-color);
     }
 
     p {
       font-size: 1rem;
       margin-top: 15px;
+      color: var(--text-color);
     }
   }
-
 }
 
 #nova_secao {
-
   .text_about {
     padding: 20px;
 
     h2 {
-      color: #0056b3;
+      font-family: "Montserrat", sans-serif;
+      color: var(--text-color);
       margin-bottom: 20px;
       font-weight: bold;
     }
 
     p {
+      font-family: "Lato", sans-serif;
       font-size: 16px;
-      color: #6c757d;
+      color: var(--text-color);
       line-height: 1.6;
     }
   }
@@ -93,12 +113,14 @@
   }
 
   h3 {
-    color: #0056b3;
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
     font-weight: bold;
   }
 
   p {
+    font-family: "Lato", sans-serif;
     font-size: 14px;
-    color: #6c757d;
+    color: var(--text-color);
   }
 }
