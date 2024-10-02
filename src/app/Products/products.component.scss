@@ -117,3 +117,45 @@
     padding: 6px 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 150px;
+    height: 100px;
+  }
+
+  .nav-btn, .close-btn {
+    padding: 8px 16px;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .category-buttons button {
+    width: 100%;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .thumbnail {
+    width: 100px;
+    height: 75px;
+  }
+
+  .nav-btn, .close-btn {
+    padding: 6px 12px;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .category-buttons button {
+    width: 100%;
+    padding: 6px 0;
+  }
+}
