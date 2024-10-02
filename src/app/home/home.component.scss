@@ -1,22 +1,38 @@
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+);
+
+// Definir o mixin media-breakpoint-up
+@mixin media-breakpoint-up($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media (min-width: map-get($breakpoints, $name)) {
+      @content;
+    }
+  }
+}
+
 #home {
   background-image: url("/assets/img_home.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 90vh;
-  padding: 20vh;;
+  height: 100vh; // Ajustar para ocupar toda a altura da tela
+  padding: 20vh;
 
-  .custom_shadow{
+  .custom_shadow {
     background: rgba(32, 32, 32, 0.44);
   }
-  h1{
+
+  h1 {
     font-family: "Montserrat", sans-serif;
     color: var(--text-color-2);
     text-align: center;
     font-size: 3rem;
   }
 
-  p{
+  p {
     font-family: "Lato", sans-serif;
     color: var(--text-color-2);
     text-align: center;
@@ -25,21 +41,187 @@
   }
 
   .home_text {
-    .custom_shadow{
+    .custom_shadow {
       width: 28rem;
       padding-block: 1rem;
       margin: 40px;
     }
-    img{
+
+    img {
       padding-bottom: 1.5rem;
     }
+  }
+
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .home_text .custom_shadow {
+      width: 24rem;
     }
   }
+
+  @media (max-width: 992px) {
+    padding: 15vh;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .home_text .custom_shadow {
+      width: 20rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 10vh;
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .home_text .custom_shadow {
+      width: 18rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 5vh;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .home_text .custom_shadow {
+      width: 16rem;
+    }
+  }
+}
+
+#about {
+  background-color: var(--bg-color);
+  padding: 3rem 0;
+
+  .text_about {
+    padding-inline: 2.5rem;
+  }
+
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+
+  button {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    a:hover {
+      color: var(--text-color-2);
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .text_about {
+      padding-inline: 2rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .text_about {
+      padding-inline: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .text_about {
+      padding-inline: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .text_about {
+      padding-inline: 0.5rem;
+    }
+  }
+}
 
 #alumin_line {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; // Centraliza os cards horizontalmente
 
   .card {
     position: relative;
@@ -114,6 +296,16 @@
       transition: 0.4s ease-in-out;
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
 }
 
 #cards {
@@ -179,76 +371,49 @@
   }
 }
 
-
-#call{
+#call {
   background-color: var(--tertiary-color);
   padding-block: 50px;
 
-  h3{
+  h3 {
     font-family: "Montserrat", sans-serif;
     color: var(--text-color);
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
 
-    a{
+    a {
       text-decoration: none;
       color: var(--text-color);
     }
   }
 
-
-
-
-}
-
-#about {
-  background-color: var(--bg-color);
-  padding: 3rem 0;
-
-  .text_about{
-    padding-inline: 2.5rem;
-  }
-
-  h2 {
-    font-family: "Montserrat", sans-serif;
-    color: var(--text-color);
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  p {
-    font-family: "Lato", sans-serif;
-    color: var(--text-color);
-    text-align: justify;
-    font-size: 1.3rem;
-  }
-
-  button {
-    background-color: var(--tertiary-color);
-    color: var(--text-color);
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 1rem;
-
-    a{
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    a:hover {
-      color: var(--text-color-2);
-      font-weight: bold;
-      transition: 0.4s ease-in-out;
+  @media (max-width: 1200px) {
+    h3 {
+      font-size: 1.8rem;
     }
   }
 
+  @media (max-width: 992px) {
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
 
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
 }
+
+
 
 
 
