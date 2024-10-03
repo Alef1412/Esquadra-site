@@ -221,8 +221,10 @@ $breakpoints: (
 #alumin_line {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; // Centraliza os cards horizontalmente
-
+  justify-content: center;
+ h2,h3{
+   margin-block: 2rem;
+ }
   .card {
     position: relative;
     display: flex;
