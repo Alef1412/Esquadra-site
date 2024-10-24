@@ -126,7 +126,6 @@ export class ProductsComponent {
         { src: './assets/galeria/portoes/portao_4.webp', title: 'portao_4' },
         { src: './assets/galeria/portoes/portao_5.webp', title: 'portao_5' },
         { src: './assets/galeria/portoes/portao_6.webp', title: 'portao_6' },
-        { src: './assets/galeria/portoes/portao_7.webp', title: 'portao_7' },
         { src: './assets/galeria/portoes/portao_8.webp', title: 'portao_8' },
         { src: './assets/galeria/portoes/portao_9.webp', title: 'portao_9' },
       ]
